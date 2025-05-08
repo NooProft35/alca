@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Conheça o Alça</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #222;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 350px;
+      transition: transform 0.3s ease;
+      flex: 1 1 calc(33.33% - 40px); /* garante 3 por linha com gap */
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img,
+    .card video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .destaque {
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    @media (max-width: 1024px) {
+      .card {
+        flex: 1 1 calc(45% - 20px);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>CONHEÇA O ALÇA!!!</h1>
+
+  <div class="galeria">
+
+    <div class="card">
+      <img src="src/alca.jpeg" alt="Imagem do Alça 1">
+      <p>
+        Este é o lendário <span class="destaque">Alça</span>, o herói das ruas e dos rolês. Dizem que ele apareceu pela primeira vez no bairro da Vila Encantada, vestindo seu boné virado e sempre com uma <em>pose misteriosa</em>. Seus amigos logo perceberam: ele era diferente.
+      </p>
+    </div>
+
+    <div class="card">
+      <video controls poster="src/alca-thumb.jpeg">
+        <source src="src/ALCA_BLUSAO.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+      <p>
+        Veja em ação: o estilo inconfundível do <span class="destaque">Alça</span> em seu blusão icônico. O vídeo fala por si só — atitude, confiança e muita presença.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="src/alca3.jpeg" alt="Imagem do Alça 3">
+      <p>
+        Em um raro registro, o <span class="destaque">Alça</span> aparece com seu famoso olhar contemplativo, observando o horizonte como quem planeja seu próximo rolê lendário.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="src/alca2.jpeg" alt="Imagem do Alça 2">
+      <p>
+        Mas por que "Alça"? Ninguém sabe ao certo... alguns dizem que é porque ele sempre carrega a galera nas costas. Outros juram que é por causa da alça da mochila, que nunca sai do seu ombro — até em festas! Seja qual for a origem, o <span class="destaque">apelido virou lenda
+          OU devido à Alça de Boquete (Ps: Ao enrrolar os dedos nas pontas do bigode e realizar o movimento de puxar ele em direção à sua pélvis)
+        </span>.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
